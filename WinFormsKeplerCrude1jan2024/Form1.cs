@@ -65,8 +65,10 @@ Reference: Numerical methods for ODEs, Butcher(2008)
             Console.WriteLine("eccentricity of the elliptic trajectory of the planet = " + eccentricity);
 
             Console.WriteLine("Solver with Flags enum");
-            ISolver solver1 = new DifferentialEquationsSolver1jan2024(new DifferentialEquationsKepler(), Method.RK41 | Method.Sophisticated);
-            ISolver solver2 = new DifferentialEquationsSolver1jan2024(new DifferentialEquationsKepler(), Method.RK41 | Method.Crude);
+            var kepler = new DifferentialEquationsKepler();
+            int numberOfFirstOrderEquations = kepler.NumberOfFirstOrderEquations;
+            ISolver solver1 = new DifferentialEquationsSolver1jan2024(kepler, Method.RK41 | Method.Sophisticated);
+            ISolver solver2 = new DifferentialEquationsSolver1jan2024(kepler, Method.RK41 | Method.Crude);
 
             double interval = Math.PI;
 
@@ -91,14 +93,14 @@ Reference: Numerical methods for ODEs, Butcher(2008)
                 double y3_pi_exact = y3_pi_exact_function(eccentricity);
                 double y4_pi_exact = y4_pi_exact_function(eccentricity);
 
-                double[] y_sophisticated = new double[4];
-                for (int i = 0; i < 4; i++)
+                double[] y_sophisticated = new double[numberOfFirstOrderEquations];
+                for (int i = 0; i < numberOfFirstOrderEquations; i++)
                 {
                     y_sophisticated[i] = solutionSophisticated.Y[i];
                 }
 
-                double[] y_crude = new double[4];
-                for (int i = 0; i < 4; i++)
+                double[] y_crude = new double[numberOfFirstOrderEquations];
+                for (int i = 0; i < numberOfFirstOrderEquations; i++)
                 {
                     y_crude[i] = solutionCrude.Y[i];
                 }
