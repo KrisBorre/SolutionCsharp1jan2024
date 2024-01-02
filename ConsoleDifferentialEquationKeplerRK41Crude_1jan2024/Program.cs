@@ -23,7 +23,7 @@ namespace ConsoleDifferentialEquationKeplerRK41Crude_1jan2024
 
             double interval = Math.PI;
 
-            string myfile_log10_error_versus_log10_delta_x = @"..\..\log10_error_versus_log10_delta_x_double_kmax8_kepler_1jan2024.txt";
+            string myfile_log10_error_versus_log10_delta_x = @"..\..\log10_error_versus_log10_delta_x_double_kmax8_kepler_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
 
             ulong number_of_steps = 200;
 
@@ -126,6 +126,9 @@ error_sophisticated = 3,3066620024888147E-15
 error_crude = 1,161219153353765E-13
 De computer tijd nodig voor deze berekening is 0,0522791 seconden.
              */
+
+            Console.WriteLine("Press Enter.");
+            Console.ReadLine();
         }
 
 

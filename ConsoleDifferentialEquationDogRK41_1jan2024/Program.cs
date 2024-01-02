@@ -25,7 +25,7 @@ namespace ConsoleDifferentialEquationDogRK41_1jan2024
 
             int kmax = 15;
 
-            string myfile_dog = @"..\..\dog_kmax15_1jan2024.txt";
+            string myfile_dog = @"..\..\dog_kmax15_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
 
             ulong number_of_steps = 1000;
             Console.WriteLine("master-and-dog problem      RK41");
@@ -69,6 +69,7 @@ namespace ConsoleDifferentialEquationDogRK41_1jan2024
             Console.WriteLine("Opportunities don’t happen, you create them.");
             Console.WriteLine("Look in the text file for the results.");
 
+            Console.WriteLine("Press Enter.");
             Console.ReadLine();
 
             /*

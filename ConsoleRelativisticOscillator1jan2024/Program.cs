@@ -20,10 +20,10 @@ namespace ConsoleRelativisticOscillator1jan2024
                                                        0.0,
                                                        0.9);
             //ic.X = 0;
-            
+
             solver.Solve(initialCondition: ic, number_of_steps: number_of_steps, out double delta_x, out NumericalSolutions solutions, number_of_solutions: 200, interval: interval, x_end: interval);
 
-            string string_file_name = "rel_osc_RK41_1jan2024.txt";
+            string string_file_name = "rel_osc_RK41_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
 
             System.IO.FileStream aFileStream2 = new System.IO.FileStream(string_file_name, System.IO.FileMode.CreateNew);
             System.IO.StreamWriter streamWriter1 = new System.IO.StreamWriter(aFileStream2);
@@ -47,6 +47,7 @@ namespace ConsoleRelativisticOscillator1jan2024
 
             Console.WriteLine("Look in the text file for the results.");
 
+            Console.WriteLine("Press Enter.");
             Console.ReadLine();
         }
     }
