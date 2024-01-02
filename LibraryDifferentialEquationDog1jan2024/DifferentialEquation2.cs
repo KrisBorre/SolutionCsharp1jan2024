@@ -12,7 +12,7 @@ namespace LibraryDifferentialEquationDog1jan2024
                                 // Dog is twice as fast as the master.
         }
 
-        public override double function(double x, params double[] y)
+        public override double function(double interval, double x, params double[] y)
         {
             return (ratio / x) * Math.Pow(1.0 + y[1] * y[1], 0.5);
         }

@@ -42,14 +42,14 @@
         public DifferentialEquationsSolverRK61_5nov2023(DifferentialEquationsBaseClass differentialEquations) : base(differentialEquations)
         { }
 
-        protected override void runge_kutta_step(double delta_x, double x, double[] y, out double[] term)
+        protected override void runge_kutta_step(double interval, double delta_x, double x, double[] y, out double[] term)
         {
             term = new double[numberOfFirstOrderEquations];
 
             double[] k1 = new double[numberOfFirstOrderEquations];
             for (int i = 0; i < numberOfFirstOrderEquations; i++)
             {
-                k1[i] = differentialEquations[i].function(x, y) * delta_x;
+                k1[i] = differentialEquations[i].function(interval, x, y) * delta_x;
             }
 
             double[] k2 = new double[numberOfFirstOrderEquations];
@@ -61,7 +61,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a21;
                 }
-                k2[i] = differentialEquations[i].function(x + c2 * delta_x, argument) * delta_x;
+                k2[i] = differentialEquations[i].function(interval, x + c2 * delta_x, argument) * delta_x;
             }
 
             double[] k3 = new double[numberOfFirstOrderEquations];
@@ -72,7 +72,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a31 + k2[j] * a32;
                 }
-                k3[i] = differentialEquations[i].function(x + c3 * delta_x, argument) * delta_x;
+                k3[i] = differentialEquations[i].function(interval,x + c3 * delta_x, argument) * delta_x;
             }
 
             double[] k4 = new double[numberOfFirstOrderEquations];
@@ -83,7 +83,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a41 + k2[j] * a42 + k3[j] * a43;
                 }
-                k4[i] = differentialEquations[i].function(x + c4 * delta_x, argument) * delta_x;
+                k4[i] = differentialEquations[i].function(interval, x + c4 * delta_x, argument) * delta_x;
             }
 
             double[] k5 = new double[numberOfFirstOrderEquations];
@@ -94,7 +94,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a51 + k2[j] * a52 + k3[j] * a53 + k4[j] * a54;
                 }
-                k5[i] = differentialEquations[i].function(x + c5 * delta_x, argument) * delta_x;
+                k5[i] = differentialEquations[i].function(interval,x + c5 * delta_x, argument) * delta_x;
             }
 
             double[] k6 = new double[numberOfFirstOrderEquations];
@@ -105,7 +105,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a61 + k2[j] * a62 + k3[j] * a63 + k4[j] * a64 + k5[j] * a65;
                 }
-                k6[i] = differentialEquations[i].function(x + c6 * delta_x, argument) * delta_x;
+                k6[i] = differentialEquations[i].function(interval, x + c6 * delta_x, argument) * delta_x;
             }
 
             double[] k7 = new double[numberOfFirstOrderEquations];
@@ -116,7 +116,7 @@
                 {
                     argument[j] = y[j] + k1[j] * a71 + k2[j] * a72 + k3[j] * a73 + k4[j] * a74 + k5[j] * a75 + k6[j] * a76;
                 }
-                k7[i] = differentialEquations[i].function(x + c7 * delta_x, argument) * delta_x;
+                k7[i] = differentialEquations[i].function(interval,x + c7 * delta_x, argument) * delta_x;
             }
 
             for (int i = 0; i < numberOfFirstOrderEquations; i++)

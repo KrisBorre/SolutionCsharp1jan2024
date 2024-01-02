@@ -2,6 +2,6 @@
 {
     public abstract class DifferentialEquationBaseClass
     {
-        public abstract double function(double x, params double[] y);
+        public abstract double function(double interval, double x, params double[] y);
     }
 }

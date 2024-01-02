@@ -2,10 +2,11 @@
 
 namespace LibraryRelativisticOscillator1jan2024
 {
-    // derivative of displacement is the first equation
+    // The derivative of the displacement is the first equation.
+    // More specifically, the derivative of the displacement is the velocity.
     internal class DifferentialEquation1 : DifferentialEquationBaseClass
     {
-        public override double function(double x, params double[] y)
+        public override double function(double interval, double x, params double[] y)
         {
             return y[1];
         }

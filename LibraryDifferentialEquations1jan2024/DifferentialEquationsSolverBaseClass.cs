@@ -20,7 +20,7 @@
         }
 
 
-        abstract protected void runge_kutta_step(double delta_x, double x, double[] y, out double[] term);
+        abstract protected void runge_kutta_step(double interval, double delta_x, double x, double[] y, out double[] term);
 
 
         public void Solve(ConditionInitial initialCondition, ulong number_of_steps, out double delta_x, out NumericalSolution solution, double interval = Math.PI, bool sophisticated = true, double x_end = Math.PI)
@@ -42,7 +42,7 @@
 
             for (ulong k = 1; k <= number_of_steps; k++)
             {
-                runge_kutta_step(delta_x, x, y, out term);
+                runge_kutta_step(interval, delta_x, x, y, out term);
 
                 for (int j = 0; j < numberOfFirstOrderEquations; j++)
                 {
@@ -109,7 +109,7 @@
 
             for (ulong k = 1; k <= number_of_steps; k++)
             {
-                runge_kutta_step(delta_x, x, y, out term);
+                runge_kutta_step(interval, delta_x, x, y, out term);
 
                 for (int j = 0; j < numberOfFirstOrderEquations; j++)
                 {
