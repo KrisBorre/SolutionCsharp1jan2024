@@ -3,31 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDifferentialEquations1jan2024", "LibraryDifferentialEquations1jan2024\LibraryDifferentialEquations1jan2024.csproj", "{5B68AC6E-4601-4C3F-867A-E080768B416C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDifferentialEquations1jan2024", "LibraryDifferentialEquations1jan2024\LibraryDifferentialEquations1jan2024.csproj", "{5B68AC6E-4601-4C3F-867A-E080768B416C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDifferentialEquationKepler1jan2024", "LibraryDifferentialEquationKepler1jan2024\LibraryDifferentialEquationKepler1jan2024.csproj", "{E6AC6F9D-5E7C-4644-B5A6-D2D702471ABB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDifferentialEquationKepler1jan2024", "LibraryDifferentialEquationKepler1jan2024\LibraryDifferentialEquationKepler1jan2024.csproj", "{E6AC6F9D-5E7C-4644-B5A6-D2D702471ABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryDifferentialEquationDog1jan2024", "LibraryDifferentialEquationDog1jan2024\LibraryDifferentialEquationDog1jan2024.csproj", "{CD2E102F-4B51-441B-B962-328BC4607884}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDifferentialEquationDog1jan2024", "LibraryDifferentialEquationDog1jan2024\LibraryDifferentialEquationDog1jan2024.csproj", "{CD2E102F-4B51-441B-B962-328BC4607884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDifferentialEquationDogRK41_1jan2024", "ConsoleDifferentialEquationDogRK41_1jan2024\ConsoleDifferentialEquationDogRK41_1jan2024.csproj", "{059BF1F0-E159-4184-A978-911055B9B34F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationDogRK41_1jan2024", "ConsoleDifferentialEquationDogRK41_1jan2024\ConsoleDifferentialEquationDogRK41_1jan2024.csproj", "{059BF1F0-E159-4184-A978-911055B9B34F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDifferentialEquationDogRK61_1jan2024", "ConsoleDifferentialEquationDogRK61_1jan2024\ConsoleDifferentialEquationDogRK61_1jan2024.csproj", "{66C35186-7C4F-466A-9876-9FFB59A626BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationDogRK61_1jan2024", "ConsoleDifferentialEquationDogRK61_1jan2024\ConsoleDifferentialEquationDogRK61_1jan2024.csproj", "{66C35186-7C4F-466A-9876-9FFB59A626BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDifferentialEquationKeplerRK41_1jan2024", "ConsoleDifferentialEquationKeplerRK41_1jan2024\ConsoleDifferentialEquationKeplerRK41_1jan2024.csproj", "{BF38F6DD-14AD-43B3-8915-9B0B555C60D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationKeplerRK41_1jan2024", "ConsoleDifferentialEquationKeplerRK41_1jan2024\ConsoleDifferentialEquationKeplerRK41_1jan2024.csproj", "{BF38F6DD-14AD-43B3-8915-9B0B555C60D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDifferentialEquationKeplerRK41Crude_1jan2024", "ConsoleDifferentialEquationKeplerRK41Crude_1jan2024\ConsoleDifferentialEquationKeplerRK41Crude_1jan2024.csproj", "{791793F6-47B1-4A5F-8AB9-CD97A812D40C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationKeplerRK41Crude_1jan2024", "ConsoleDifferentialEquationKeplerRK41Crude_1jan2024\ConsoleDifferentialEquationKeplerRK41Crude_1jan2024.csproj", "{791793F6-47B1-4A5F-8AB9-CD97A812D40C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDifferentialEquationKeplerRK61_1jan2024", "ConsoleDifferentialEquationKeplerRK61_1jan2024\ConsoleDifferentialEquationKeplerRK61_1jan2024.csproj", "{207B5B10-2E8B-4007-B684-BBA9233736F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationKeplerRK61_1jan2024", "ConsoleDifferentialEquationKeplerRK61_1jan2024\ConsoleDifferentialEquationKeplerRK61_1jan2024.csproj", "{207B5B10-2E8B-4007-B684-BBA9233736F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDogTextBox1jan2024", "WinFormsDogTextBox1jan2024\WinFormsDogTextBox1jan2024.csproj", "{EB471881-77F8-46C7-8211-E1C0B2136073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsDogTextBox1jan2024", "WinFormsDogTextBox1jan2024\WinFormsDogTextBox1jan2024.csproj", "{EB471881-77F8-46C7-8211-E1C0B2136073}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsKeplerCrude1jan2024", "WinFormsKeplerCrude1jan2024\WinFormsKeplerCrude1jan2024.csproj", "{17DDA375-E883-4BFC-BF4F-1394E09A2160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsKeplerCrude1jan2024", "WinFormsKeplerCrude1jan2024\WinFormsKeplerCrude1jan2024.csproj", "{17DDA375-E883-4BFC-BF4F-1394E09A2160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRelativisticOscillator1jan2024", "ConsoleRelativisticOscillator1jan2024\ConsoleRelativisticOscillator1jan2024.csproj", "{7C0E50CD-9C29-46FB-8D8A-C3596249F9AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRelativisticOscillator1jan2024", "ConsoleRelativisticOscillator1jan2024\ConsoleRelativisticOscillator1jan2024.csproj", "{7C0E50CD-9C29-46FB-8D8A-C3596249F9AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryRelativisticOscillator1jan2024", "LibraryRelativisticOscillator1jan2024\LibraryRelativisticOscillator1jan2024.csproj", "{95D09F81-37AB-45C0-8479-372E6F50F2B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryRelativisticOscillator1jan2024", "LibraryRelativisticOscillator1jan2024\LibraryRelativisticOscillator1jan2024.csproj", "{95D09F81-37AB-45C0-8479-372E6F50F2B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsRelativisticOscillatorTextBox1jan2024", "WinFormsRelativisticOscillatorTextBox1jan2024\WinFormsRelativisticOscillatorTextBox1jan2024.csproj", "{950592B5-876C-4B4F-A521-A9BF97314F11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsRelativisticOscillatorTextBox1jan2024", "WinFormsRelativisticOscillatorTextBox1jan2024\WinFormsRelativisticOscillatorTextBox1jan2024.csproj", "{950592B5-876C-4B4F-A521-A9BF97314F11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsRelativisticOscillatorTextBox2jan2024", "WinFormsRelativisticOscillatorTextBox2jan2024\WinFormsRelativisticOscillatorTextBox2jan2024.csproj", "{4C277601-EA38-48CE-891F-5396CABC8EBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryRelativisticOscillator2jan2024", "LibraryRelativisticOscillator2jan2024\LibraryRelativisticOscillator2jan2024.csproj", "{74DBA0B3-8F60-42B3-BEDE-9863F9DA5EB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryDifferentialEquationKepler2jan2024", "LibraryDifferentialEquationKepler2jan2024\LibraryDifferentialEquationKepler2jan2024.csproj", "{31F80FF8-6936-4979-8581-CB699DD5B0B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsKeplerEllipticOrbit3jan2024", "WinFormsKeplerEllipticOrbit3jan2024\WinFormsKeplerEllipticOrbit3jan2024.csproj", "{7F0322E0-9AA0-41D3-9A94-63396B68F125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsKepler4jan2024", "WinFormsKepler4jan2024\WinFormsKepler4jan2024.csproj", "{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +97,26 @@ Global
 		{950592B5-876C-4B4F-A521-A9BF97314F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950592B5-876C-4B4F-A521-A9BF97314F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950592B5-876C-4B4F-A521-A9BF97314F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C277601-EA38-48CE-891F-5396CABC8EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C277601-EA38-48CE-891F-5396CABC8EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C277601-EA38-48CE-891F-5396CABC8EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C277601-EA38-48CE-891F-5396CABC8EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DBA0B3-8F60-42B3-BEDE-9863F9DA5EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DBA0B3-8F60-42B3-BEDE-9863F9DA5EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DBA0B3-8F60-42B3-BEDE-9863F9DA5EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DBA0B3-8F60-42B3-BEDE-9863F9DA5EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F80FF8-6936-4979-8581-CB699DD5B0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F80FF8-6936-4979-8581-CB699DD5B0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F80FF8-6936-4979-8581-CB699DD5B0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F80FF8-6936-4979-8581-CB699DD5B0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0322E0-9AA0-41D3-9A94-63396B68F125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0322E0-9AA0-41D3-9A94-63396B68F125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0322E0-9AA0-41D3-9A94-63396B68F125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0322E0-9AA0-41D3-9A94-63396B68F125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

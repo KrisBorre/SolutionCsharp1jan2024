@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OxyPlot.WindowsForms" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryDifferentialEquationKepler2jan2024\LibraryDifferentialEquationKepler2jan2024.csproj" />
+    <ProjectReference Include="..\LibraryDifferentialEquations1jan2024\LibraryDifferentialEquations1jan2024.csproj" />
+  </ItemGroup>
+
+</Project>
