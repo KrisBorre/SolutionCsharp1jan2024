@@ -1,7 +1,7 @@
-﻿using LibraryDifferentialEquationKepler1jan2024;
+﻿using LibraryDifferentialEquationKepler2jan2024;
 using LibraryDifferentialEquations1jan2024;
 
-namespace ConsoleDifferentialEquationKeplerRK41_1jan2024
+namespace ConsoleDifferentialEquationKeplerRKCV8_14feb2024
 {
     internal class Program
     {
@@ -9,21 +9,21 @@ namespace ConsoleDifferentialEquationKeplerRK41_1jan2024
         {
             Console.WriteLine("Don’t wait for your feelings to change to take the action. Take the action and your feelings will change.");
 
-            Console.WriteLine("Kepler's planetary motion.");
+            Console.WriteLine("Kepler's planetary motion.          RKCV8");
             Console.WriteLine("Planet moves around the Sun in an elliptic orbit.");
-            Console.WriteLine("The equations of motion are ordinary differential equations and are numerically calculated using a Runge-Kutta method.");
+            Console.WriteLine("The equations of motion are ordinary differential equations and are numerically calculated using the Runge-Kutta-Cooper-Verner method.");
             //Console.WriteLine("Comparison between crude Runge-Kutta calculation and sophisticated Runge-Kutta calculation.");
 
             int kmax = 5; //  15;
 
-            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRK41_16feb2024(new DifferentialEquationsKepler());
+            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRKCV8(new DifferentialEquationsKepler());
 
             const double eccentricity = 0.5; // 3. / 4.; // 0.5; // 0;
             Console.WriteLine("eccentricity = " + eccentricity);
 
             double interval = Math.PI;
 
-            string myfile_log10_error_versus_log10_delta_x = @"..\..\log10_error_versus_log10_delta_x_double_kmax5_kepler_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
+            string myfile_log10_error_versus_log10_delta_x_RKCV8 = @"..\..\log10_error_versus_log10_delta_x_double_kmax5_RKCV8_kepler_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
 
             ulong number_of_steps = 200;
 
@@ -64,7 +64,7 @@ namespace ConsoleDifferentialEquationKeplerRK41_1jan2024
                 numberFormatInfo.NumberDecimalSeparator = ".";
                 string output1 = string.Format(numberFormatInfo, "{0} \t {1}", Math.Log10(delta_x), Math.Log10(Math.Abs(error_sophisticated)));
 
-                using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(myfile_log10_error_versus_log10_delta_x, append: true))
+                using (StreamWriter streamWriter = new StreamWriter(myfile_log10_error_versus_log10_delta_x_RKCV8, append: true))
                 {
                     streamWriter.WriteLine(output1);
                 }
@@ -76,31 +76,28 @@ namespace ConsoleDifferentialEquationKeplerRK41_1jan2024
             Console.WriteLine("Look in the text file for the results.");
 
             /*
--1.8038801229698473 	 -6.266268917639554
--2.1049101186338284 	 -7.492966723244174
--2.4059401142978096 	 -8.708766817760381
--2.706970109961791 	     -9.918823838520368
--3.008000105625772 	     -11.12585592719547
-            */
-
-            /*
+Kepler's planetary motion.          RKCV8
+Planet moves around the Sun in an elliptic orbit.
+The equations of motion are ordinary differential equations and are numerically calculated using a Runge-Kutta-Cooper-Verner method.
 eccentricity = 0,5
 number_of_steps = 200
-error_sophisticated = 5,416653837116365E-07
-De computer tijd nodig voor deze berekening is 0,0016909 seconden.
+error_sophisticated = 1,8109021630223707E-13
+De computer tijd nodig voor deze berekening is 5,7665744 seconden.
 number_of_steps = 400
-error_sophisticated = 3,2139068476957545E-08
-De computer tijd nodig voor deze berekening is 0,0005278 seconden.
+error_sophisticated = 2,1452796910142906E-15
+De computer tijd nodig voor deze berekening is 0,0027673 seconden.
 number_of_steps = 800
-error_sophisticated = 1,955389188640242E-09
-De computer tijd nodig voor deze berekening is 0,001019 seconden.
+error_sophisticated = 1,7511694774218688E-15
+De computer tijd nodig voor deze berekening is 0,0056307 seconden.
 number_of_steps = 1600
-error_sophisticated = 1,205525243556392E-10
-De computer tijd nodig voor deze berekening is 0,0019063 seconden.
+error_sophisticated = 1,3994233861170033E-15
+De computer tijd nodig voor deze berekening is 0,0146549 seconden.
 number_of_steps = 3200
-error_sophisticated = 7,484111132471269E-12
-De computer tijd nodig voor deze berekening is 0,0071199 seconden.
-             */
+error_sophisticated = 1,4624874890978325E-15
+De computer tijd nodig voor deze berekening is 0,0179741 seconden.
+            */
+
+            Console.WriteLine("Beloon jezelf.");
             Console.WriteLine("Press Enter.");
             Console.ReadLine();
         }

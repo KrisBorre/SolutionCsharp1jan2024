@@ -1,9 +1,7 @@
 ﻿using LibraryDifferentialEquations1jan2024;
 
-namespace LibraryRelativisticOscillator2jan2024
+namespace LibraryHarmonicOscillatorVelocity14feb2024
 {
-    // The derivative of the displacement is the first equation.
-    // More specifically, the derivative of the displacement is the velocity.
     internal class DifferentialEquation1 : DifferentialEquationBaseClass
     {
         private SpringManager spring_manager;
@@ -15,7 +13,6 @@ namespace LibraryRelativisticOscillator2jan2024
             mass_manager = mass;
         }
 
-        // d(displacement) / dt    =   velocity
         public override double function(double interval, double x, params double[] y)
         {
             return y[1];

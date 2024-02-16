@@ -99,7 +99,7 @@ Numerical solution: 0 	 0.6664261854634432 	Analytic solution: 0 	 0.66666666666
         /// <returns></returns>
         static double y_exact_function(double x)
         {
-            return (Math.Pow(x, 1.5) / 3.0) - Math.Pow(x, 0.5) + 2.0 / 3.0;
+            return (Math.Pow(x, 1.5) / 3.0) - Math.Sqrt(x) + 2.0 / 3.0;
         }
     }
 }

@@ -101,7 +101,7 @@ De computer tijd nodig voor deze berekening is 0,0071906 seconden.
 
         static double sqrt(double x)
         {
-            return Math.Pow(x, 0.5);
+            return Math.Sqrt(x);
         }
 
         static double y1_zero_exact_function(double eccentricity)

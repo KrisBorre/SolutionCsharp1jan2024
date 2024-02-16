@@ -16,7 +16,7 @@ namespace ConsoleDifferentialEquationKeplerRK41Crude_1jan2024
 
             int kmax = 8; // 5; //  15;
 
-            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRK41_5nov2023(new DifferentialEquationsKepler());
+            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRK41_16feb2024(new DifferentialEquationsKepler());
 
             const double eccentricity = 0.5; // 3. / 4.; // 0.5; // 0;
             Console.WriteLine("eccentricity = " + eccentricity);
@@ -134,7 +134,7 @@ De computer tijd nodig voor deze berekening is 0,0522791 seconden.
 
         static double sqrt(double x)
         {
-            return Math.Pow(x, 0.5);
+            return Math.Sqrt(x);
         }
 
         static double y1_zero_exact_function(double eccentricity)

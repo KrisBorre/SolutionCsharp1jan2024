@@ -9,7 +9,7 @@ namespace ConsoleRelativisticOscillator1jan2024
         {
             Console.WriteLine("The special relativistic generalization of the Harmonic Oscillator.");
 
-            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRK41_5nov2023(new DifferentialEquationsRelativisticOscillator());
+            DifferentialEquationsSolverBaseClass solver = new DifferentialEquationsSolverRK41_16feb2024(new DifferentialEquationsRelativisticOscillator());
 
             double interval = 5.0 * 2.0 * Math.PI; // 5 oscillations    
             ulong number_of_steps = 200;

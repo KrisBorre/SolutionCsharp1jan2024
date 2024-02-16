@@ -130,7 +130,7 @@ Reference: Numerical methods for ODEs, Butcher(2008)
 
         static double sqrt(double x)
         {
-            return Math.Pow(x, 0.5);
+            return Math.Sqrt(x);
         }
 
         static double abs(double x)

@@ -1,20 +1,20 @@
 ﻿using LibraryDifferentialEquations1jan2024;
 
-namespace LibraryRelativisticOscillator2jan2024
+namespace LibraryPendulum16feb2024
 {
-    // The derivative of the velocity (in units of c) is the second equation.
     internal class DifferentialEquation2 : DifferentialEquationBaseClass
     {
-        private SpringManager spring_manager;
+        private LengthManager length_manager;
+        private GravityManager gravity_manager;
         private MassManager mass_manager;
 
-        public DifferentialEquation2(SpringManager spring, MassManager mass)
+        public DifferentialEquation2(LengthManager length_manager, GravityManager gravity_manager, MassManager mass_manager)
         {
-            spring_manager = spring;
-            mass_manager = mass;
+            this.length_manager = length_manager;
+            this.gravity_manager = gravity_manager;
+            this.mass_manager = mass_manager;
         }
 
-        // dv/dt =   .... displacement ...
         public override double function(double interval, double x, params double[] y)
         {
             // interval is the entire time span that we want to simulate.
@@ -22,10 +22,11 @@ namespace LibraryRelativisticOscillator2jan2024
             // x is the time during the simulation.
             // x is the x or t of the differential equation.
 
-            double k = spring_manager.GetSpring(interval, x);
+            double l = length_manager.GetLength(interval, x);
+            double g = gravity_manager.GetGravity(interval, x);
             double m = mass_manager.GetMass(interval, x);
 
-            return -(k / m) * y[0] * Math.Pow(1 - y[1] * y[1], 1.5);
+            return -m * g * l * Math.Sin(y[0]);
         }
     }
 }

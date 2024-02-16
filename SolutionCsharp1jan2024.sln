@@ -39,7 +39,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsKeplerEllipticOrbit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsKepler4jan2024", "WinFormsKepler4jan2024\WinFormsKepler4jan2024.csproj", "{8AF404C0-442B-4D50-9BC1-68EBED1D3D7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsRelativisticOscillatorTextBox18jan2024", "WinFormsRelativisticOscillatorTextBox18jan2024\WinFormsRelativisticOscillatorTextBox18jan2024.csproj", "{2F037235-C342-4B7A-9F18-9E8C7F7709B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsRelativisticOscillatorTextBox18jan2024", "WinFormsRelativisticOscillatorTextBox18jan2024\WinFormsRelativisticOscillatorTextBox18jan2024.csproj", "{2F037235-C342-4B7A-9F18-9E8C7F7709B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationDogRKCV8_14feb2024", "ConsoleDifferentialEquationDogRKCV8_14feb2024\ConsoleDifferentialEquationDogRKCV8_14feb2024.csproj", "{2F5EF3BC-24A8-48CA-B7E1-981F1B2408ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDifferentialEquationKeplerRKCV8_14feb2024", "ConsoleDifferentialEquationKeplerRKCV8_14feb2024\ConsoleDifferentialEquationKeplerRKCV8_14feb2024.csproj", "{9B567B73-F59B-4F63-B074-63D8E037EF59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryHarmonicOscillatorVelocity14feb2024", "LibraryHarmonicOscillatorVelocity14feb2024\LibraryHarmonicOscillatorVelocity14feb2024.csproj", "{ADD95100-4030-4C5F-8462-E474E5CE90FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryHarmonicOscillatorMomentum16feb2024", "LibraryHarmonicOscillatorMomentum16feb2024\LibraryHarmonicOscillatorMomentum16feb2024.csproj", "{78A77234-194D-4E8A-BC53-79F5F705875E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsHarmonicOscillatorVelocityTextBox14feb2024", "WinFormsHarmonicOscillatorVelocityTextBox14feb2024\WinFormsHarmonicOscillatorVelocityTextBox14feb2024.csproj", "{C44A2008-A1EB-4BCD-9D5B-27553DCDB6A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsHarmonicOscillatorMomentumTextBox16feb2024", "WinFormsHarmonicOscillatorMomentumTextBox16feb2024\WinFormsHarmonicOscillatorMomentumTextBox16feb2024.csproj", "{D1F02B2A-F265-495B-AEDE-2617CEECA067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryPendulum16feb2024", "LibraryPendulum16feb2024\LibraryPendulum16feb2024.csproj", "{678C7316-9812-4B29-BF2F-0F8EA8140689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +137,34 @@ Global
 		{2F037235-C342-4B7A-9F18-9E8C7F7709B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F037235-C342-4B7A-9F18-9E8C7F7709B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F037235-C342-4B7A-9F18-9E8C7F7709B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5EF3BC-24A8-48CA-B7E1-981F1B2408ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5EF3BC-24A8-48CA-B7E1-981F1B2408ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5EF3BC-24A8-48CA-B7E1-981F1B2408ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5EF3BC-24A8-48CA-B7E1-981F1B2408ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B567B73-F59B-4F63-B074-63D8E037EF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B567B73-F59B-4F63-B074-63D8E037EF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B567B73-F59B-4F63-B074-63D8E037EF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B567B73-F59B-4F63-B074-63D8E037EF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD95100-4030-4C5F-8462-E474E5CE90FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD95100-4030-4C5F-8462-E474E5CE90FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD95100-4030-4C5F-8462-E474E5CE90FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD95100-4030-4C5F-8462-E474E5CE90FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A77234-194D-4E8A-BC53-79F5F705875E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A77234-194D-4E8A-BC53-79F5F705875E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A77234-194D-4E8A-BC53-79F5F705875E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A77234-194D-4E8A-BC53-79F5F705875E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C44A2008-A1EB-4BCD-9D5B-27553DCDB6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C44A2008-A1EB-4BCD-9D5B-27553DCDB6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C44A2008-A1EB-4BCD-9D5B-27553DCDB6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C44A2008-A1EB-4BCD-9D5B-27553DCDB6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F02B2A-F265-495B-AEDE-2617CEECA067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F02B2A-F265-495B-AEDE-2617CEECA067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F02B2A-F265-495B-AEDE-2617CEECA067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F02B2A-F265-495B-AEDE-2617CEECA067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
