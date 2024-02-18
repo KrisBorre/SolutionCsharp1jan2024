@@ -53,7 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsHarmonicOscillatorV
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsHarmonicOscillatorMomentumTextBox16feb2024", "WinFormsHarmonicOscillatorMomentumTextBox16feb2024\WinFormsHarmonicOscillatorMomentumTextBox16feb2024.csproj", "{D1F02B2A-F265-495B-AEDE-2617CEECA067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryPendulum16feb2024", "LibraryPendulum16feb2024\LibraryPendulum16feb2024.csproj", "{678C7316-9812-4B29-BF2F-0F8EA8140689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryPendulum16feb2024", "LibraryPendulum16feb2024\LibraryPendulum16feb2024.csproj", "{678C7316-9812-4B29-BF2F-0F8EA8140689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsPendulum18feb2024", "WinFormsPendulum18feb2024\WinFormsPendulum18feb2024.csproj", "{5952FC65-43FE-4465-8FBF-776568331601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsPendulum19feb2024", "WinFormsPendulum19feb2024\WinFormsPendulum19feb2024.csproj", "{3E439EE3-1881-4118-AB69-0221A2993E69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +169,14 @@ Global
 		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{678C7316-9812-4B29-BF2F-0F8EA8140689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5952FC65-43FE-4465-8FBF-776568331601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5952FC65-43FE-4465-8FBF-776568331601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5952FC65-43FE-4465-8FBF-776568331601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5952FC65-43FE-4465-8FBF-776568331601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E439EE3-1881-4118-AB69-0221A2993E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E439EE3-1881-4118-AB69-0221A2993E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E439EE3-1881-4118-AB69-0221A2993E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E439EE3-1881-4118-AB69-0221A2993E69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,6 +8,7 @@ namespace LibraryPendulum16feb2024
         private GravityManager gravity_manager;
         private MassManager mass_manager;
 
+        // angle: theta, canonical momentum: p_theta
         public DifferentialEquationsPendulum(ParameterConfiguration length_configuration = ParameterConfiguration.Constant, ParameterConfiguration gravity_configuration = ParameterConfiguration.Constant, ParameterConfiguration mass_configuration = ParameterConfiguration.Constant)
         {
             this.length_manager = new LengthManager(length_configuration);
