@@ -205,9 +205,9 @@ namespace WinFormsRelativisticOscillatorTextBox18jan2024
                 PlotModel plotModel0 = new PlotModel();
                 LineSeries series0 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series0.Points.Add(new DataPoint(solution.X, problem.GetSpring(interval, solution.X)));
                 }
 
@@ -224,9 +224,9 @@ namespace WinFormsRelativisticOscillatorTextBox18jan2024
                 PlotModel plotModel1 = new PlotModel();
                 LineSeries series1 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series1.Points.Add(new DataPoint(solution.X, problem.GetMass(interval, solution.X)));
                 }
 
@@ -242,9 +242,9 @@ namespace WinFormsRelativisticOscillatorTextBox18jan2024
                 PlotModel plotModel2 = new PlotModel();
                 LineSeries series2 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series2.Points.Add(new DataPoint(solution.X, solution.Y[0]));
                 }
 
@@ -260,11 +260,11 @@ namespace WinFormsRelativisticOscillatorTextBox18jan2024
                 PlotModel plotModel3 = new PlotModel();
                 LineSeries series3 = new LineSeries();
 
-                double[] energies = new double[solutions.numericalSolutions.Length];
+                double[] energies = new double[solutions.Length];
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     double energy = this.energy_function(k: problem.GetSpring(interval, solution.X), m: problem.GetMass(interval, solution.X), y1: solution.Y[0], y2: solution.Y[1]);
                     energies[i] = energy;
                     series3.Points.Add(new DataPoint(solution.X, energy));

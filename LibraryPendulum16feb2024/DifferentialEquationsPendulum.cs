@@ -15,9 +15,9 @@ namespace LibraryPendulum16feb2024
             this.gravity_manager = new GravityManager(gravity_configuration);
             this.mass_manager = new MassManager(mass_configuration);
 
-            DifferentialEquations = new DifferentialEquationBaseClass[2];
-            DifferentialEquations[0] = new DifferentialEquation1(length_manager, gravity_manager, mass_manager);
-            DifferentialEquations[1] = new DifferentialEquation2(length_manager, gravity_manager, mass_manager);
+            this.NumberOfFirstOrderEquations = 2;
+            this[0] = new DifferentialEquation1(length_manager, gravity_manager, mass_manager);
+            this[1] = new DifferentialEquation2(length_manager, gravity_manager, mass_manager);
         }
 
         public double GetLength(double interval, double t)

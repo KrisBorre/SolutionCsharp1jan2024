@@ -25,12 +25,12 @@ namespace ConsoleRelativisticOscillator1jan2024
 
             string string_file_name = "rel_osc_RK41_" + DateTime.Now.ToString("ddMMMyyyy") + ".txt";
 
-            System.IO.FileStream aFileStream2 = new System.IO.FileStream(string_file_name, System.IO.FileMode.CreateNew);
-            System.IO.StreamWriter streamWriter1 = new System.IO.StreamWriter(aFileStream2);
+            FileStream aFileStream2 = new FileStream(string_file_name, FileMode.CreateNew);
+            StreamWriter streamWriter1 = new StreamWriter(aFileStream2);
 
-            for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+            for (int i = 0; i < solutions.Length; i++)
             {
-                NumericalSolution solution = solutions.numericalSolutions[i];
+                NumericalSolution solution = solutions[i];
 
                 string string_time = solution.X.ToString("G15", System.Globalization.CultureInfo.InvariantCulture);
                 streamWriter1.Write(string_time + "\t");

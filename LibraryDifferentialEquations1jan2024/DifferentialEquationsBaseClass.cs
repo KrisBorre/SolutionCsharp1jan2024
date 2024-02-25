@@ -5,22 +5,31 @@
     /// </summary>
     public abstract class DifferentialEquationsBaseClass : IIndexInterface<DifferentialEquationBaseClass>
     {
-        public DifferentialEquationBaseClass[] DifferentialEquations;
+        private DifferentialEquationBaseClass[] differentialEquations;
+
+        public int Length
+        {
+            get { return differentialEquations.Length; }
+        }
 
         public int NumberOfFirstOrderEquations
         {
-            get { return DifferentialEquations.Length; }
+            get { return differentialEquations.Length; }
+            set
+            {
+                differentialEquations = new DifferentialEquationBaseClass[value];
+            }
         }
 
         public DifferentialEquationBaseClass this[int index]
         {
             get
             {
-                return DifferentialEquations[index];
+                return differentialEquations[index];
             }
             set
             {
-                DifferentialEquations[index] = value;
+                differentialEquations[index] = value;
             }
         }
     }

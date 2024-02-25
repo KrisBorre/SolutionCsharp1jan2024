@@ -57,7 +57,7 @@ namespace ConsoleDifferentialEquationDogRK61_1jan2024
                 sb.Append("Analytic solution: ");
                 sb.Append(string.Format(numberFormatInfo, "{0} \t {1} \t", solution.X, y_exact_function(solution.X)));
 
-                using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(myfile_dog_RK61, append: true))
+                using (StreamWriter streamWriter = new StreamWriter(myfile_dog_RK61, append: true))
                 {
                     streamWriter.WriteLine(sb.ToString());
                 }

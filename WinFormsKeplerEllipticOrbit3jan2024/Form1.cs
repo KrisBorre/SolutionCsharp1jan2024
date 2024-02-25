@@ -132,9 +132,9 @@ namespace WinFormsKeplerEllipticOrbit3jan2024
 
             LineSeries series1 = new LineSeries { MarkerType = MarkerType.Circle };
 
-            for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+            for (int i = 0; i < solutions.Length; i++)
             {
-                NumericalSolution solution = solutions.numericalSolutions[i];
+                NumericalSolution solution = solutions[i];
                 series1.Points.Add(new DataPoint(solution.Y[0], solution.Y[1]));
             }
 

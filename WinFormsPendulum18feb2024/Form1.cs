@@ -117,9 +117,9 @@ namespace WinFormsPendulum18feb2024
             PlotModel plotModel = new PlotModel();
             LineSeries series = new LineSeries();
 
-            for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+            for (int i = 0; i < solutions.Length; i++)
             {
-                NumericalSolution solution = solutions.numericalSolutions[i];
+                NumericalSolution solution = solutions[i];
                 series.Points.Add(new DataPoint(solution.X, solution.Y[0]));
             }
 

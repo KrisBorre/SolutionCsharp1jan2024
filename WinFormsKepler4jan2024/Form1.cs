@@ -174,9 +174,9 @@ namespace WinFormsKepler4jan2024
                 PlotModel plotModel1 = new PlotModel();
                 LineSeries series1 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series1.Points.Add(new DataPoint(solution.X, problem.GetMassExoplanet(interval, solution.X)));
                 }
 
@@ -192,9 +192,9 @@ namespace WinFormsKepler4jan2024
                 PlotModel plotModel2 = new PlotModel();
                 LineSeries series2 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series2.Points.Add(new DataPoint(solution.X, problem.GetMassStar(interval, solution.X)));
                 }
 
@@ -210,9 +210,9 @@ namespace WinFormsKepler4jan2024
                 PlotModel plotModel3 = new PlotModel();
                 LineSeries series3 = new LineSeries();
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     series3.Points.Add(new DataPoint(solution.X, solution.Y[0]));
                 }
 
@@ -229,11 +229,11 @@ namespace WinFormsKepler4jan2024
                 PlotModel plotModel4 = new PlotModel();
                 LineSeries series4 = new LineSeries();
 
-                double[] energies = new double[solutions.numericalSolutions.Length];
+                double[] energies = new double[solutions.Length];
 
-                for (int i = 0; i < solutions.numericalSolutions.Length; i++)
+                for (int i = 0; i < solutions.Length; i++)
                 {
-                    NumericalSolution solution = solutions.numericalSolutions[i];
+                    NumericalSolution solution = solutions[i];
                     double energy = this.energy_function(mass_exoplanet: problem.GetMassExoplanet(interval, solution.X), mass_star: problem.GetMassStar(interval, solution.X), y1: solution.Y[0], y2: solution.Y[1], y3: solution.Y[2], y4: solution.Y[3]);
                     energies[i] = energy;
                     series4.Points.Add(new DataPoint(solution.X, energy));

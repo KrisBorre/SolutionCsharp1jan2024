@@ -80,7 +80,7 @@ namespace ConsoleDifferentialEquationKeplerRK41Crude_1jan2024
                 numberFormatInfo.NumberDecimalSeparator = ".";
                 string output1 = string.Format(numberFormatInfo, "{0} \t {1} \t {2}", Math.Log10(delta_x), Math.Log10(Math.Abs(error_sophisticated)), Math.Log10(Math.Abs(error_crude)));
 
-                using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(myfile_log10_error_versus_log10_delta_x, append: true))
+                using (StreamWriter streamWriter = new StreamWriter(myfile_log10_error_versus_log10_delta_x, append: true))
                 {
                     streamWriter.WriteLine(output1);
                 }

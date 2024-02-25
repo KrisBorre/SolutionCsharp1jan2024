@@ -19,11 +19,11 @@ namespace LibraryDifferentialEquationKepler2jan2024
             this.mass_exoplanet_manager = new MassExoplanetManager(mass_exoplanet_configuration);
             this.mass_star_manager = new MassStarManager(mass_star_configuration);
 
-            DifferentialEquations = new DifferentialEquationBaseClass[4];
-            DifferentialEquations[0] = new DifferentialEquation1(mass_exoplanet_manager, mass_star_manager);
-            DifferentialEquations[1] = new DifferentialEquation2(mass_exoplanet_manager, mass_star_manager);
-            DifferentialEquations[2] = new DifferentialEquation3(mass_exoplanet_manager, mass_star_manager);
-            DifferentialEquations[3] = new DifferentialEquation4(mass_exoplanet_manager, mass_star_manager);
+            this.NumberOfFirstOrderEquations = 4;
+            this[0] = new DifferentialEquation1(mass_exoplanet_manager, mass_star_manager);
+            this[1] = new DifferentialEquation2(mass_exoplanet_manager, mass_star_manager);
+            this[2] = new DifferentialEquation3(mass_exoplanet_manager, mass_star_manager);
+            this[3] = new DifferentialEquation4(mass_exoplanet_manager, mass_star_manager);
         }
 
         public double GetMassExoplanet(double interval, double t)

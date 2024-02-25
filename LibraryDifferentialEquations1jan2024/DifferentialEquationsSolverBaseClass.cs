@@ -92,7 +92,7 @@
 
             solutions = new NumericalSolutions();
             number_of_solutions = (int)Math.Min(number_of_steps, (ulong)number_of_solutions);
-            solutions.numericalSolutions = new NumericalSolution[number_of_solutions];
+            solutions.NumberOfSolutions = number_of_solutions;            
 
             double[] y = new double[numberOfFirstOrderEquations];
 
@@ -142,7 +142,7 @@
                 {
                     NumericalSolution solution = new NumericalSolution(y);
                     solution.X = x;
-                    solutions.numericalSolutions[index_solution] = solution;
+                    solutions[index_solution] = solution;
                     index_solution++;
                 }
             }
